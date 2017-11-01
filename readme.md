@@ -1,6 +1,6 @@
 # Trip Diary
 
-Trip Diary is a simple web site where you can easy register the trips you want to do your you did.
+Trip Diary is a simple web site where you can easy register the trips you want to do or you did.
 
 ### Installing
 
@@ -69,6 +69,7 @@ Then you will be redirected to the main page.
 
 ## Author
 Bruno Fonseca Lambert
+
 Email: brunofsclambert@gmail.com
 
 ## Usefull Links
