@@ -1,27 +1,28 @@
-## Laravel PHP Framework
+## Trip Diary
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+This project use the PHP Laravel FrameWork. So you will need to follow the steps bellow to execute the Web Server and then you will be able to open it on your browser.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+1 – Install the Composer (https://getcomposer.org/download/)
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+2- Install the Laravel using the Compose with the command:
+	composer global require "laravel/installer"
+Use the terminal or the prompt (windows).
 
-## Official Documentation
+3- You need to download the project.
+	You can do it github site or using command:
+		“git clone https://github.com/BrunoLambert/TripDiary.git”
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+4- You will need to configure your DataBase. Open the file “.env” at the main folder. You will need to change these 3 lines to your DB especifications:
+	DB_DATABASE=tripdaily
+	DB_USERNAME=root
+	DB_PASSWORD=
+We are using a MySQL DataBase. Make sure you already have a created database to use.
 
-## Contributing
+4- With all the files downloaded and the DataBase configured, you need to run the Laravel server. Open the Prompt(Windows) or the terminal (Linux) and browse to the folder you donwloaded the project.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+5- Now, we need to build our tables in DataBase. Laravel does everythin for us. Just run the command: “php artisan migrate” and Make sure that it creates the tables at your DB.
 
-## Security Vulnerabilities
+6- Now we run the server: “php artisan serve”.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+7- Open your browser and enter “localhost:8000”. Then you will be redirected to the main page.
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
