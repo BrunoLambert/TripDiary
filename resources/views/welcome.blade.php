@@ -115,7 +115,7 @@
     function numberCheck(){
         // It is also a simple check. It makes sure that the number of people at the trip is higher than 1
 
-        var number = document.getElementById('numPeople');
+        var number = document.getElementById('numPeople').value;
         if (number < 1){
             errors[4] = "Number of people should be higher or equal than 1";
             updateError();
